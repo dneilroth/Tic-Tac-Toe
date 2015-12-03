@@ -34,7 +34,7 @@ View.prototype.makeMove = function ($square) {
 View.prototype.setupBoard = function () {
   this.game = new Game();
   this.$el.children().remove();
-  var $ul = $("<ul></ul>");
+  var $ul = $("<ul>");
   var counter = 0;
   this.$el.append($ul);
   _(9).times(function(){
